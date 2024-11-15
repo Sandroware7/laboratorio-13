@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>DEVMARKET</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pag3.html">Productos</a></li>
+                <li><a href="pag2.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+            
+    
+
+    <main class="main-formulario">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="dni">DNI (8 caracteres numéricos):</label>
+            <input type="text" id="dni" name="dni" maxlength="8" required><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+
+            <button type="button" onclick="validarFormulario()">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 DEVSTYLES. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>

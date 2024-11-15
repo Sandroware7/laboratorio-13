@@ -1,0 +1,310 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+.header,
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #f2f2f2;
+}
+
+/* Navbar */
+.nav,
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav a,
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav a:hover,
+.navbar a:hover {
+    color: #ff6347;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li:not(:last-child)::after {
+    content: " |";
+    color: #f2f2f2;
+    padding-left: 10px;
+}
+
+/* Carrito de compras */
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.icon {
+    width: 24px;
+    cursor: pointer;
+}
+
+.count {
+    background-color: #f57c00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #e5533d;
+}
+
+/* Sección de Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 300px;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para cada producto */
+.product-card,
+.item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img,
+.item img {
+    width: 100%;
+    border-radius: 4px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-name,
+.item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price,
+.item p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #ff6347;
+}
+
+.buy-button,
+.add {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover,
+.add:hover {
+    background-color: #e5533d;
+}
+
+/* Footer */
+.footer,
+footer {
+    background-color: #222;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer p,
+footer p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.footer a,
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover,
+footer a:hover {
+    color: #e5533d;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos específicos para la página del formulario */
+
+/* Formulario */
+
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+form label {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #F0FAF1;
+    border-radius: 25px;
+    background-color: #EDFFF0;
+}
+
+form button {
+    padding: 10px 50px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.main-formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-image: url('images/ad75193f-db1a-456b-a8fe-5d3053f3613e.webp');
+    background-size: cover;
+
+}
+.main-formulario h2 {
+    color: #000000;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 5px #4de2da;
+    font-size: 25px;
+    text-align: center;
+}
+.main-formulario form {
+    background-color: #3c9790;
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+.main-formulario form button {
+    background-color: #ff6347;
+    color: rgb(255, 255, 255);
+}
