@@ -1,4 +1,4 @@
-//Página 2
+//Página 2 js para validar formulario
 function validarFormulario() {
     
     const nombre = document.getElementById('nombre').value;
@@ -25,7 +25,6 @@ function validarFormulario() {
         alert("El correo electrónico debe contener una '@'.");
         return;
     }
-
     alert("Datos ingresados con éxito");
 }
 //Página 3
